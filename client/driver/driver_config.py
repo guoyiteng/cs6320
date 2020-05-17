@@ -26,16 +26,16 @@ LOGIN_PORT = None  # Set when using a port other than the SSH default
 DB_TYPE = 'postgres'
 
 # Name of the database
-DB_NAME = 'tpcc'
+DB_NAME = 'ottertune'
 
 # Database username
-DB_USER = 'dbuser'
+DB_USER = 'yiteng'
 
 # Password for DB_USER
-DB_PASSWORD = 'dbpassword'
+DB_PASSWORD = 'yiteng'
 
 # Database admin username (for tasks like restarting the database)
-ADMIN_USER = DB_USER
+ADMIN_USER = 'postgres'
 
 # Database host address
 DB_HOST = 'localhost'
@@ -47,7 +47,7 @@ DB_PORT = '5432'
 DB_CONF = '/etc/postgresql/9.6/main/postgresql.conf'
 
 # Path to the directory for storing database dump files
-DB_DUMP_DIR = '/var/lib/postgresql/9.6/main/dumpfiles'
+DB_DUMP_DIR = '/mnt/data/dumpfiles'
 
 # Base config settings to always include when installing new configurations
 BASE_DB_CONF = {
@@ -64,7 +64,7 @@ DATABASE_DISK = None
 OVERRIDE_DB_VERSION = None
 
 # POSTGRES-SPECIFIC OPTIONS >>>
-PG_DATADIR = '/var/lib/postgresql/9.6/main'
+PG_DATADIR = '/mnt/data/postgresql/9.6/main'
 
 # ORACLE-SPECIFIC OPTIONS >>>
 ORACLE_AWR_ENABLED = False
@@ -88,7 +88,7 @@ RESULT_DIR = os.path.join(DRIVER_HOME, 'results')
 TEMP_DIR = '/tmp/driver'
 
 # Path to the directory for storing database dump files
-DB_DUMP_DIR = os.path.join(DRIVER_HOME, 'dumpfiles')
+# DB_DUMP_DIR = os.path.join(DRIVER_HOME, 'dumpfiles')
 
 # Reload the database after running this many iterations
 RELOAD_INTERVAL = 10
@@ -109,7 +109,7 @@ RESTART_SLEEP_SEC = 300
 #==========================================================
 
 # Path to OLTPBench directory
-OLTPBENCH_HOME = os.path.expanduser('~/oltpbench')
+OLTPBENCH_HOME = os.path.expanduser('~/cs6320/oltpbench')
 
 # Path to the OLTPBench configuration file
 OLTPBENCH_CONFIG = os.path.join(OLTPBENCH_HOME, 'config/tpcc_config_postgres.xml')
@@ -149,7 +149,7 @@ CONTROLLER_LOG = os.path.join(LOG_DIR, 'controller.log')
 #==========================================================
 
 # OtterTune website URL
-WEBSITE_URL = 'http://127.0.0.1:8000'
+WEBSITE_URL = 'http://10.0.0.6:8000'
 
 # Code for uploading new results to the website
-UPLOAD_CODE = 'I5I10PXK3PK27FM86YYS'
+UPLOAD_CODE = 'V8LQT6U304EZ527SFJDQ'

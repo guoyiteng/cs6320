@@ -108,7 +108,7 @@ def restart_database():
             # in the container is postgres itself
             local('docker restart {}'.format(dconf.CONTAINER_NAME))
         else:
-            sudo('pg_ctl -D {} -w -t 600 restart -m fast'.format(
+            sudo('/usr/lib/postgresql/9.6/bin/pg_ctl -D {} -w -t 600 restart -m fast'.format(
                 dconf.PG_DATADIR), user=dconf.ADMIN_USER, capture=False)
     elif dconf.DB_TYPE == 'oracle':
         db_log_path = os.path.join(os.path.split(dconf.DB_CONF)[0], 'startup.log')
@@ -217,7 +217,7 @@ def change_conf(next_conf=None):
         f.write(''.join(lines))
 
     sudo('cp {0} {0}.ottertune.bak'.format(dconf.DB_CONF))
-    put(tmp_conf_out, dconf.DB_CONF, use_sudo=False)
+    put(tmp_conf_out, dconf.DB_CONF, use_sudo=True)
     local('rm -f {} {}'.format(tmp_conf_in, tmp_conf_out))
 
 
