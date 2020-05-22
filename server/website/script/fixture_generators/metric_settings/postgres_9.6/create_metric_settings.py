@@ -10,6 +10,7 @@ COUNTER = 1
 INFO = 2
 
 INTEGER = 2
+REAL = 3
 STRING = 1
 TIMESTAMP = 6
 NUMERIC_TYPES = ['oid', 'bigint', 'double precision', 'integer']
@@ -29,7 +30,10 @@ def load_data(filename):
         stat['metric_type'] = parts[header.index('metric_type')]
         vartype = parts[header.index('data_type')]
         if vartype in NUMERIC_TYPES:
-            vartype = INTEGER
+            if vartype == 'double precision':
+                vartype = REAL
+            else:
+                vartype = INTEGER
         elif vartype == 'name' or vartype == 'text':
             vartype = STRING
         elif vartype.startswith('timestamp'):

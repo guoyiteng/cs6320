@@ -1,1106 +1,1106 @@
 [
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "global",
-            "vartype": 2,
             "name": "pg_stat_archiver.failed_count",
+            "vartype": 2,
+            "default": null,
             "summary": "Number of failed attempts for archiving WAL files",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "global",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "global",
-            "vartype": 2,
             "name": "pg_stat_archiver.archived_count",
+            "vartype": 2,
+            "default": null,
             "summary": "Number of WAL files that have been successfully archived",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "global",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "global",
-            "vartype": 6,
             "name": "pg_stat_archiver.stats_reset",
+            "vartype": 6,
+            "default": null,
             "summary": "Time at which these statistics were last reset",
-            "metric_type": 2
-        },
-        "model": "website.MetricCatalog"
+            "scope": "global",
+            "metric_type": 2,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "global",
-            "vartype": 6,
             "name": "pg_stat_archiver.last_archived_time",
+            "vartype": 6,
+            "default": null,
             "summary": "Time of the last successful archive operation",
-            "metric_type": 2
-        },
-        "model": "website.MetricCatalog"
+            "scope": "global",
+            "metric_type": 2,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "global",
-            "vartype": 6,
             "name": "pg_stat_archiver.last_failed_time",
+            "vartype": 6,
+            "default": null,
             "summary": "Time of the last failed archival operation",
-            "metric_type": 2
-        },
-        "model": "website.MetricCatalog"
+            "scope": "global",
+            "metric_type": 2,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "global",
-            "vartype": 1,
             "name": "pg_stat_archiver.last_failed_wal",
+            "vartype": 1,
+            "default": null,
             "summary": "Name of the WAL file of the last failed archival operation",
-            "metric_type": 2
-        },
-        "model": "website.MetricCatalog"
+            "scope": "global",
+            "metric_type": 2,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "global",
-            "vartype": 1,
             "name": "pg_stat_archiver.last_archived_wal",
+            "vartype": 1,
+            "default": null,
             "summary": "Name of the last WAL file successfully archived",
-            "metric_type": 2
-        },
-        "model": "website.MetricCatalog"
+            "scope": "global",
+            "metric_type": 2,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "global",
-            "vartype": 2,
             "name": "pg_stat_bgwriter.buffers_backend",
+            "vartype": 2,
+            "default": null,
             "summary": "Number of buffers written directly by a backend",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "global",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "global",
-            "vartype": 2,
             "name": "pg_stat_bgwriter.checkpoints_timed",
+            "vartype": 2,
+            "default": null,
             "summary": "Number of scheduled checkpoints that have been performed",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "global",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "global",
-            "vartype": 2,
             "name": "pg_stat_bgwriter.buffers_alloc",
+            "vartype": 2,
+            "default": null,
             "summary": "Number of buffers allocated",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "global",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "global",
-            "vartype": 2,
             "name": "pg_stat_bgwriter.buffers_clean",
+            "vartype": 2,
+            "default": null,
             "summary": "Number of buffers written by the background writer",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "global",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "global",
-            "vartype": 2,
             "name": "pg_stat_bgwriter.buffers_backend_fsync",
+            "vartype": 2,
+            "default": null,
             "summary": "Number of times a backend had to execute its own fsync call (normally the background writer handles those even when the backend does its own write)",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "global",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "global",
-            "vartype": 2,
             "name": "pg_stat_bgwriter.checkpoint_sync_time",
+            "vartype": 3,
+            "default": null,
             "summary": "\"Total amount of time that has been spent in the portion of checkpoint processing where files are synchronized to disk, in milliseconds\"",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "global",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "global",
-            "vartype": 2,
             "name": "pg_stat_bgwriter.checkpoints_req",
+            "vartype": 2,
+            "default": null,
             "summary": "Number of requested checkpoints that have been performed",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "global",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "global",
-            "vartype": 2,
             "name": "pg_stat_bgwriter.checkpoint_write_time",
+            "vartype": 3,
+            "default": null,
             "summary": "\"Total amount of time that has been spent in the portion of checkpoint processing where files are written to disk, in milliseconds\"",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "global",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "global",
-            "vartype": 2,
             "name": "pg_stat_bgwriter.maxwritten_clean",
+            "vartype": 2,
+            "default": null,
             "summary": "Number of times the background writer stopped a cleaning scan because it had written too many buffers",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "global",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "global",
-            "vartype": 2,
             "name": "pg_stat_bgwriter.buffers_checkpoint",
+            "vartype": 2,
+            "default": null,
             "summary": "Number of buffers written during checkpoints",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
-    },
-    {
-        "fields": {
-            "dbms": 1,
-            "default": null,
             "scope": "global",
-            "vartype": 6,
+            "metric_type": 1,
+            "dbms": 1
+        }
+    },
+    {
+        "model": "website.MetricCatalog",
+        "fields": {
             "name": "pg_stat_bgwriter.stats_reset",
+            "vartype": 6,
+            "default": null,
             "summary": "Time at which these statistics were last reset",
-            "metric_type": 2
-        },
-        "model": "website.MetricCatalog"
+            "scope": "global",
+            "metric_type": 2,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "database",
-            "vartype": 2,
             "name": "pg_stat_database.numbackends",
+            "vartype": 2,
+            "default": null,
             "summary": "Number of backends currently connected to this database. This is the only column in this view that returns a value reflecting current state; all other columns return the accumulated values since the last reset.",
-            "metric_type": 2
-        },
-        "model": "website.MetricCatalog"
+            "scope": "database",
+            "metric_type": 2,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "database",
-            "vartype": 1,
             "name": "pg_stat_database.datname",
+            "vartype": 1,
+            "default": null,
             "summary": "Name of this database",
-            "metric_type": 2
-        },
-        "model": "website.MetricCatalog"
+            "scope": "database",
+            "metric_type": 2,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "database",
-            "vartype": 2,
             "name": "pg_stat_database.blks_read",
+            "vartype": 2,
+            "default": null,
             "summary": "Number of disk blocks read in this database",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "database",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "database",
-            "vartype": 2,
             "name": "pg_stat_database.deadlocks",
+            "vartype": 2,
+            "default": null,
             "summary": "Number of deadlocks detected in this database",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "database",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "database",
-            "vartype": 2,
             "name": "pg_stat_database.tup_fetched",
+            "vartype": 2,
+            "default": null,
             "summary": "Number of rows fetched by queries in this database",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "database",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "database",
-            "vartype": 2,
             "name": "pg_stat_database.tup_updated",
+            "vartype": 2,
+            "default": null,
             "summary": "Number of rows updated by queries in this database",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "database",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "database",
-            "vartype": 6,
             "name": "pg_stat_database.stats_reset",
+            "vartype": 6,
+            "default": null,
             "summary": "Time at which these statistics were last reset",
-            "metric_type": 2
-        },
-        "model": "website.MetricCatalog"
+            "scope": "database",
+            "metric_type": 2,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "database",
-            "vartype": 2,
             "name": "pg_stat_database.tup_inserted",
+            "vartype": 2,
+            "default": null,
             "summary": "Number of rows inserted by queries in this database",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "database",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "database",
-            "vartype": 2,
             "name": "pg_stat_database.datid",
+            "vartype": 2,
+            "default": null,
             "summary": "OID of a database",
-            "metric_type": 2
-        },
-        "model": "website.MetricCatalog"
+            "scope": "database",
+            "metric_type": 2,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "database",
-            "vartype": 2,
             "name": "pg_stat_database.xact_commit",
+            "vartype": 2,
+            "default": null,
             "summary": "Number of transactions in this database that have been committed",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "database",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "database",
-            "vartype": 2,
             "name": "pg_stat_database.tup_deleted",
+            "vartype": 2,
+            "default": null,
             "summary": "Number of rows deleted by queries in this database",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "database",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "database",
-            "vartype": 2,
             "name": "pg_stat_database.blk_read_time",
+            "vartype": 3,
+            "default": null,
             "summary": "\"Time spent reading data file blocks by backends in this database, in milliseconds\"",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "database",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "database",
-            "vartype": 2,
             "name": "pg_stat_database.xact_rollback",
+            "vartype": 2,
+            "default": null,
             "summary": "Number of transactions in this database that have been rolled back",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "database",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "database",
-            "vartype": 2,
             "name": "pg_stat_database.conflicts",
+            "vartype": 2,
+            "default": null,
             "summary": "\"Number of queries canceled due to conflicts with recovery in this database. (Conflicts occur only on standby servers; see pg_stat_database_conflicts for details.)\"",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "database",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "database",
-            "vartype": 2,
             "name": "pg_stat_database.blks_hit",
+            "vartype": 2,
+            "default": null,
             "summary": "\"Number of times disk blocks were found already in the buffer cache, so that a read was not necessary (this only includes hits in the PostgreSQL buffer cache, not the operating system's file system cache)\"",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "database",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "database",
-            "vartype": 2,
             "name": "pg_stat_database.tup_returned",
+            "vartype": 2,
+            "default": null,
             "summary": "Number of rows returned by queries in this database",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "database",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "database",
-            "vartype": 2,
             "name": "pg_stat_database.temp_files",
+            "vartype": 2,
+            "default": null,
             "summary": "\"Number of temporary files created by queries in this database. All temporary files are counted, regardless of why the temporary file was created (e.g., sorting or hashing), and regardless of the log_temp_files setting.\"",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "database",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "database",
-            "vartype": 2,
             "name": "pg_stat_database.blk_write_time",
+            "vartype": 3,
+            "default": null,
             "summary": "\"Time spent writing data file blocks by backends in this database, in milliseconds\"",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "database",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "database",
-            "vartype": 2,
             "name": "pg_stat_database.temp_bytes",
+            "vartype": 2,
+            "default": null,
             "summary": "\"Total amount of data written to temporary files by queries in this database. All temporary files are counted, regardless of why the temporary file was created, and regardless of the log_temp_files setting.\"",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "database",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "database",
-            "vartype": 1,
             "name": "pg_stat_database_conflicts.datname",
+            "vartype": 1,
+            "default": null,
             "summary": "Name of this database",
-            "metric_type": 2
-        },
-        "model": "website.MetricCatalog"
+            "scope": "database",
+            "metric_type": 2,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "database",
-            "vartype": 2,
             "name": "pg_stat_database_conflicts.confl_deadlock",
+            "vartype": 2,
+            "default": null,
             "summary": "Number of queries in this database that have been canceled due to deadlocks",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "database",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "database",
-            "vartype": 2,
             "name": "pg_stat_database_conflicts.confl_bufferpin",
+            "vartype": 2,
+            "default": null,
             "summary": "Number of queries in this database that have been canceled due to pinned buffers",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "database",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "database",
-            "vartype": 2,
             "name": "pg_stat_database_conflicts.datid",
+            "vartype": 2,
+            "default": null,
             "summary": "OID of a database",
-            "metric_type": 2
-        },
-        "model": "website.MetricCatalog"
+            "scope": "database",
+            "metric_type": 2,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "database",
-            "vartype": 2,
             "name": "pg_stat_database_conflicts.confl_tablespace",
+            "vartype": 2,
+            "default": null,
             "summary": "Number of queries in this database that have been canceled due to dropped tablespaces",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "database",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "database",
-            "vartype": 2,
             "name": "pg_stat_database_conflicts.confl_lock",
+            "vartype": 2,
+            "default": null,
             "summary": "Number of queries in this database that have been canceled due to lock timeouts",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
-    },
-    {
-        "fields": {
-            "dbms": 1,
-            "default": null,
             "scope": "database",
-            "vartype": 2,
+            "metric_type": 1,
+            "dbms": 1
+        }
+    },
+    {
+        "model": "website.MetricCatalog",
+        "fields": {
             "name": "pg_stat_database_conflicts.confl_snapshot",
+            "vartype": 2,
+            "default": null,
             "summary": "Number of queries in this database that have been canceled due to old snapshots",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "database",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "index",
-            "vartype": 2,
             "name": "pg_stat_user_indexes.indexrelid",
+            "vartype": 2,
+            "default": null,
             "summary": "OID of this index",
-            "metric_type": 2
-        },
-        "model": "website.MetricCatalog"
+            "scope": "index",
+            "metric_type": 2,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "index",
-            "vartype": 2,
             "name": "pg_stat_user_indexes.relid",
+            "vartype": 2,
+            "default": null,
             "summary": "OID of the table for this index",
-            "metric_type": 2
-        },
-        "model": "website.MetricCatalog"
+            "scope": "index",
+            "metric_type": 2,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "index",
-            "vartype": 1,
             "name": "pg_stat_user_indexes.indexrelname",
+            "vartype": 1,
+            "default": null,
             "summary": "Name of this index",
-            "metric_type": 2
-        },
-        "model": "website.MetricCatalog"
+            "scope": "index",
+            "metric_type": 2,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "index",
-            "vartype": 1,
             "name": "pg_stat_user_indexes.relname",
+            "vartype": 1,
+            "default": null,
             "summary": "Name of the table for this index",
-            "metric_type": 2
-        },
-        "model": "website.MetricCatalog"
+            "scope": "index",
+            "metric_type": 2,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "index",
-            "vartype": 2,
             "name": "pg_stat_user_indexes.idx_tup_fetch",
+            "vartype": 2,
+            "default": null,
             "summary": "Number of live table rows fetched by simple index scans using this index",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "index",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "index",
-            "vartype": 2,
             "name": "pg_stat_user_indexes.idx_tup_read",
+            "vartype": 2,
+            "default": null,
             "summary": "Number of index entries returned by scans on this index",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "index",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "index",
-            "vartype": 2,
             "name": "pg_stat_user_indexes.idx_scan",
+            "vartype": 2,
+            "default": null,
             "summary": "Number of index scans initiated on this index",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "index",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "index",
-            "vartype": 1,
             "name": "pg_stat_user_indexes.schemaname",
+            "vartype": 1,
+            "default": null,
             "summary": "Name of the schema this index is in",
-            "metric_type": 2
-        },
-        "model": "website.MetricCatalog"
+            "scope": "index",
+            "metric_type": 2,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "table",
-            "vartype": 6,
             "name": "pg_stat_user_tables.last_vacuum",
+            "vartype": 6,
+            "default": null,
             "summary": "Last time at which this table was manually vacuumed (not counting VACUUM FULL)",
-            "metric_type": 2
-        },
-        "model": "website.MetricCatalog"
+            "scope": "table",
+            "metric_type": 2,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "table",
-            "vartype": 2,
             "name": "pg_stat_user_tables.n_tup_ins",
+            "vartype": 2,
+            "default": null,
             "summary": "Number of rows inserted",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "table",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "table",
-            "vartype": 2,
             "name": "pg_stat_user_tables.n_dead_tup",
+            "vartype": 2,
+            "default": null,
             "summary": "Estimated number of dead rows",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "table",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "table",
-            "vartype": 6,
             "name": "pg_stat_user_tables.last_analyze",
+            "vartype": 6,
+            "default": null,
             "summary": "Last time at which this table was manually analyzed",
-            "metric_type": 2
-        },
-        "model": "website.MetricCatalog"
+            "scope": "table",
+            "metric_type": 2,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "table",
-            "vartype": 2,
             "name": "pg_stat_user_tables.idx_tup_fetch",
+            "vartype": 2,
+            "default": null,
             "summary": "Number of live rows fetched by index scans",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "table",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "table",
-            "vartype": 2,
             "name": "pg_stat_user_tables.n_tup_upd",
+            "vartype": 2,
+            "default": null,
             "summary": "Number of rows updated",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "table",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "table",
-            "vartype": 1,
             "name": "pg_stat_user_tables.schemaname",
+            "vartype": 1,
+            "default": null,
             "summary": "Name of the schema that this table is in",
-            "metric_type": 2
-        },
-        "model": "website.MetricCatalog"
+            "scope": "table",
+            "metric_type": 2,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "table",
-            "vartype": 2,
             "name": "pg_stat_user_tables.seq_tup_read",
+            "vartype": 2,
+            "default": null,
             "summary": "Number of live rows fetched by sequential scans",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "table",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "table",
-            "vartype": 2,
             "name": "pg_stat_user_tables.vacuum_count",
+            "vartype": 2,
+            "default": null,
             "summary": "Number of times this table has been manually vacuumed (not counting VACUUM FULL)",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "table",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "table",
-            "vartype": 2,
             "name": "pg_stat_user_tables.n_mod_since_analyze",
+            "vartype": 2,
+            "default": null,
             "summary": "Estimated number of rows modified since this table was last analyzed",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "table",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "table",
-            "vartype": 2,
             "name": "pg_stat_user_tables.n_tup_del",
+            "vartype": 2,
+            "default": null,
             "summary": "Number of rows deleted",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "table",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "table",
-            "vartype": 6,
             "name": "pg_stat_user_tables.last_autovacuum",
-            "summary": "Last time at which this table was vacuumed by the autovacuum daemon",
-            "metric_type": 2
-        },
-        "model": "website.MetricCatalog"
-    },
-    {
-        "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "table",
-            "vartype": 2,
-            "name": "pg_stat_user_tables.seq_scan",
-            "summary": "Number of sequential scans initiated on this table",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
-    },
-    {
-        "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "table",
-            "vartype": 2,
-            "name": "pg_stat_user_tables.relid",
-            "summary": "OID of a table",
-            "metric_type": 2
-        },
-        "model": "website.MetricCatalog"
-    },
-    {
-        "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "table",
-            "vartype": 2,
-            "name": "pg_stat_user_tables.n_tup_hot_upd",
-            "summary": "\"Number of rows HOT updated (i.e., with no separate index update required)\"",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
-    },
-    {
-        "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "table",
-            "vartype": 2,
-            "name": "pg_stat_user_tables.autoanalyze_count",
-            "summary": "Number of times this table has been analyzed by the autovacuum daemon",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
-    },
-    {
-        "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "table",
-            "vartype": 2,
-            "name": "pg_stat_user_tables.n_live_tup",
-            "summary": "Estimated number of live rows",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
-    },
-    {
-        "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "table",
-            "vartype": 1,
-            "name": "pg_stat_user_tables.relname",
-            "summary": "Name of this table",
-            "metric_type": 2
-        },
-        "model": "website.MetricCatalog"
-    },
-    {
-        "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "table",
             "vartype": 6,
-            "name": "pg_stat_user_tables.last_autoanalyze",
-            "summary": "Last time at which this table was analyzed by the autovacuum daemon",
-            "metric_type": 2
-        },
-        "model": "website.MetricCatalog"
-    },
-    {
-        "fields": {
-            "dbms": 1,
             "default": null,
+            "summary": "Last time at which this table was vacuumed by the autovacuum daemon",
             "scope": "table",
-            "vartype": 2,
-            "name": "pg_stat_user_tables.idx_scan",
-            "summary": "Number of index scans initiated on this table",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "metric_type": 2,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
+            "name": "pg_stat_user_tables.seq_scan",
+            "vartype": 2,
             "default": null,
+            "summary": "Number of sequential scans initiated on this table",
             "scope": "table",
+            "metric_type": 1,
+            "dbms": 1
+        }
+    },
+    {
+        "model": "website.MetricCatalog",
+        "fields": {
+            "name": "pg_stat_user_tables.relid",
             "vartype": 2,
-            "name": "pg_stat_user_tables.autovacuum_count",
-            "summary": "Number of times this table has been vacuumed by the autovacuum daemon",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
-    },
-    {
-        "fields": {
-            "dbms": 1,
             "default": null,
-            "scope": "table",
-            "vartype": 2,
-            "name": "pg_stat_user_tables.analyze_count",
-            "summary": "Number of times this table has been manually analyzed",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
-    },
-    {
-        "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "index",
-            "vartype": 2,
-            "name": "pg_statio_user_indexes.indexrelid",
-            "summary": "OID of this index",
-            "metric_type": 2
-        },
-        "model": "website.MetricCatalog"
-    },
-    {
-        "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "index",
-            "vartype": 2,
-            "name": "pg_statio_user_indexes.relid",
-            "summary": "OID of the table for this index",
-            "metric_type": 2
-        },
-        "model": "website.MetricCatalog"
-    },
-    {
-        "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "index",
-            "vartype": 1,
-            "name": "pg_statio_user_indexes.indexrelname",
-            "summary": "Name of this index",
-            "metric_type": 2
-        },
-        "model": "website.MetricCatalog"
-    },
-    {
-        "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "index",
-            "vartype": 2,
-            "name": "pg_statio_user_indexes.idx_blks_hit",
-            "summary": "Number of buffer hits in this index",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
-    },
-    {
-        "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "index",
-            "vartype": 1,
-            "name": "pg_statio_user_indexes.relname",
-            "summary": "Name of the table for this index",
-            "metric_type": 2
-        },
-        "model": "website.MetricCatalog"
-    },
-    {
-        "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "index",
-            "vartype": 2,
-            "name": "pg_statio_user_indexes.idx_blks_read",
-            "summary": "Number of disk blocks read from this index",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
-    },
-    {
-        "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "index",
-            "vartype": 1,
-            "name": "pg_statio_user_indexes.schemaname",
-            "summary": "Name of the schema this index is in",
-            "metric_type": 2
-        },
-        "model": "website.MetricCatalog"
-    },
-    {
-        "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "table",
-            "vartype": 2,
-            "name": "pg_statio_user_tables.relid",
             "summary": "OID of a table",
-            "metric_type": 2
-        },
-        "model": "website.MetricCatalog"
+            "scope": "table",
+            "metric_type": 2,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "table",
+            "name": "pg_stat_user_tables.n_tup_hot_upd",
             "vartype": 2,
-            "name": "pg_statio_user_tables.heap_blks_hit",
-            "summary": "Number of buffer hits in this table",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "default": null,
+            "summary": "\"Number of rows HOT updated (i.e., with no separate index update required)\"",
+            "scope": "table",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "table",
+            "name": "pg_stat_user_tables.autoanalyze_count",
             "vartype": 2,
-            "name": "pg_statio_user_tables.tidx_blks_read",
-            "summary": "Number of disk blocks read from this table's TOAST table index (if any)",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "default": null,
+            "summary": "Number of times this table has been analyzed by the autovacuum daemon",
+            "scope": "table",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "table",
+            "name": "pg_stat_user_tables.n_live_tup",
             "vartype": 2,
-            "name": "pg_statio_user_tables.tidx_blks_hit",
-            "summary": "Number of buffer hits in this table's TOAST table index (if any)",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "default": null,
+            "summary": "Estimated number of live rows",
+            "scope": "table",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "table",
-            "vartype": 2,
-            "name": "pg_statio_user_tables.toast_blks_hit",
-            "summary": "Number of buffer hits in this table's TOAST table (if any)",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
-    },
-    {
-        "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "table",
-            "vartype": 2,
-            "name": "pg_statio_user_tables.idx_blks_hit",
-            "summary": "Number of buffer hits in all indexes on this table",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
-    },
-    {
-        "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "table",
+            "name": "pg_stat_user_tables.relname",
             "vartype": 1,
-            "name": "pg_statio_user_tables.relname",
+            "default": null,
             "summary": "Name of this table",
-            "metric_type": 2
-        },
-        "model": "website.MetricCatalog"
+            "scope": "table",
+            "metric_type": 2,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
+            "name": "pg_stat_user_tables.last_autoanalyze",
+            "vartype": 6,
             "default": null,
+            "summary": "Last time at which this table was analyzed by the autovacuum daemon",
             "scope": "table",
+            "metric_type": 2,
+            "dbms": 1
+        }
+    },
+    {
+        "model": "website.MetricCatalog",
+        "fields": {
+            "name": "pg_stat_user_tables.idx_scan",
             "vartype": 2,
-            "name": "pg_statio_user_tables.toast_blks_read",
-            "summary": "Number of disk blocks read from this table's TOAST table (if any)",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "default": null,
+            "summary": "Number of index scans initiated on this table",
+            "scope": "table",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "table",
+            "name": "pg_stat_user_tables.autovacuum_count",
             "vartype": 2,
-            "name": "pg_statio_user_tables.idx_blks_read",
-            "summary": "Number of disk blocks read from all indexes on this table",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "default": null,
+            "summary": "Number of times this table has been vacuumed by the autovacuum daemon",
+            "scope": "table",
+            "metric_type": 1,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
+            "name": "pg_stat_user_tables.analyze_count",
+            "vartype": 2,
             "default": null,
+            "summary": "Number of times this table has been manually analyzed",
             "scope": "table",
+            "metric_type": 1,
+            "dbms": 1
+        }
+    },
+    {
+        "model": "website.MetricCatalog",
+        "fields": {
+            "name": "pg_statio_user_indexes.indexrelid",
+            "vartype": 2,
+            "default": null,
+            "summary": "OID of this index",
+            "scope": "index",
+            "metric_type": 2,
+            "dbms": 1
+        }
+    },
+    {
+        "model": "website.MetricCatalog",
+        "fields": {
+            "name": "pg_statio_user_indexes.relid",
+            "vartype": 2,
+            "default": null,
+            "summary": "OID of the table for this index",
+            "scope": "index",
+            "metric_type": 2,
+            "dbms": 1
+        }
+    },
+    {
+        "model": "website.MetricCatalog",
+        "fields": {
+            "name": "pg_statio_user_indexes.indexrelname",
             "vartype": 1,
-            "name": "pg_statio_user_tables.schemaname",
-            "summary": "Name of the schema that this table is in",
-            "metric_type": 2
-        },
-        "model": "website.MetricCatalog"
+            "default": null,
+            "summary": "Name of this index",
+            "scope": "index",
+            "metric_type": 2,
+            "dbms": 1
+        }
     },
     {
+        "model": "website.MetricCatalog",
         "fields": {
-            "dbms": 1,
-            "default": null,
-            "scope": "table",
+            "name": "pg_statio_user_indexes.idx_blks_hit",
             "vartype": 2,
+            "default": null,
+            "summary": "Number of buffer hits in this index",
+            "scope": "index",
+            "metric_type": 1,
+            "dbms": 1
+        }
+    },
+    {
+        "model": "website.MetricCatalog",
+        "fields": {
+            "name": "pg_statio_user_indexes.relname",
+            "vartype": 1,
+            "default": null,
+            "summary": "Name of the table for this index",
+            "scope": "index",
+            "metric_type": 2,
+            "dbms": 1
+        }
+    },
+    {
+        "model": "website.MetricCatalog",
+        "fields": {
+            "name": "pg_statio_user_indexes.idx_blks_read",
+            "vartype": 2,
+            "default": null,
+            "summary": "Number of disk blocks read from this index",
+            "scope": "index",
+            "metric_type": 1,
+            "dbms": 1
+        }
+    },
+    {
+        "model": "website.MetricCatalog",
+        "fields": {
+            "name": "pg_statio_user_indexes.schemaname",
+            "vartype": 1,
+            "default": null,
+            "summary": "Name of the schema this index is in",
+            "scope": "index",
+            "metric_type": 2,
+            "dbms": 1
+        }
+    },
+    {
+        "model": "website.MetricCatalog",
+        "fields": {
+            "name": "pg_statio_user_tables.relid",
+            "vartype": 2,
+            "default": null,
+            "summary": "OID of a table",
+            "scope": "table",
+            "metric_type": 2,
+            "dbms": 1
+        }
+    },
+    {
+        "model": "website.MetricCatalog",
+        "fields": {
+            "name": "pg_statio_user_tables.heap_blks_hit",
+            "vartype": 2,
+            "default": null,
+            "summary": "Number of buffer hits in this table",
+            "scope": "table",
+            "metric_type": 1,
+            "dbms": 1
+        }
+    },
+    {
+        "model": "website.MetricCatalog",
+        "fields": {
+            "name": "pg_statio_user_tables.tidx_blks_read",
+            "vartype": 2,
+            "default": null,
+            "summary": "Number of disk blocks read from this table's TOAST table index (if any)",
+            "scope": "table",
+            "metric_type": 1,
+            "dbms": 1
+        }
+    },
+    {
+        "model": "website.MetricCatalog",
+        "fields": {
+            "name": "pg_statio_user_tables.tidx_blks_hit",
+            "vartype": 2,
+            "default": null,
+            "summary": "Number of buffer hits in this table's TOAST table index (if any)",
+            "scope": "table",
+            "metric_type": 1,
+            "dbms": 1
+        }
+    },
+    {
+        "model": "website.MetricCatalog",
+        "fields": {
+            "name": "pg_statio_user_tables.toast_blks_hit",
+            "vartype": 2,
+            "default": null,
+            "summary": "Number of buffer hits in this table's TOAST table (if any)",
+            "scope": "table",
+            "metric_type": 1,
+            "dbms": 1
+        }
+    },
+    {
+        "model": "website.MetricCatalog",
+        "fields": {
+            "name": "pg_statio_user_tables.idx_blks_hit",
+            "vartype": 2,
+            "default": null,
+            "summary": "Number of buffer hits in all indexes on this table",
+            "scope": "table",
+            "metric_type": 1,
+            "dbms": 1
+        }
+    },
+    {
+        "model": "website.MetricCatalog",
+        "fields": {
+            "name": "pg_statio_user_tables.relname",
+            "vartype": 1,
+            "default": null,
+            "summary": "Name of this table",
+            "scope": "table",
+            "metric_type": 2,
+            "dbms": 1
+        }
+    },
+    {
+        "model": "website.MetricCatalog",
+        "fields": {
+            "name": "pg_statio_user_tables.toast_blks_read",
+            "vartype": 2,
+            "default": null,
+            "summary": "Number of disk blocks read from this table's TOAST table (if any)",
+            "scope": "table",
+            "metric_type": 1,
+            "dbms": 1
+        }
+    },
+    {
+        "model": "website.MetricCatalog",
+        "fields": {
+            "name": "pg_statio_user_tables.idx_blks_read",
+            "vartype": 2,
+            "default": null,
+            "summary": "Number of disk blocks read from all indexes on this table",
+            "scope": "table",
+            "metric_type": 1,
+            "dbms": 1
+        }
+    },
+    {
+        "model": "website.MetricCatalog",
+        "fields": {
+            "name": "pg_statio_user_tables.schemaname",
+            "vartype": 1,
+            "default": null,
+            "summary": "Name of the schema that this table is in",
+            "scope": "table",
+            "metric_type": 2,
+            "dbms": 1
+        }
+    },
+    {
+        "model": "website.MetricCatalog",
+        "fields": {
             "name": "pg_statio_user_tables.heap_blks_read",
+            "vartype": 2,
+            "default": null,
             "summary": "Number of disk blocks read from this table",
-            "metric_type": 1
-        },
-        "model": "website.MetricCatalog"
+            "scope": "table",
+            "metric_type": 1,
+            "dbms": 1
+        }
     }
 ]
