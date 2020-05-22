@@ -11,6 +11,7 @@ Created on Jul 4, 2016
 
 import numpy as np
 from sklearn.decomposition import FactorAnalysis as SklearnFactorAnalysis
+from sklearn.decomposition import PCA
 
 from .base import ModelBase
 
@@ -88,9 +89,11 @@ class FactorAnalysis(ModelBase):
             feature_labels = ["feature_{}".format(i) for i in range(X.shape[1])]
         self.feature_labels_ = feature_labels
         if n_components is not None:
-            model = SklearnFactorAnalysis(n_components=n_components)
+            # model = SklearnFactorAnalysis(n_components=n_components)
+            model = PCA(n_components=2)
         else:
-            model = SklearnFactorAnalysis()
+            # model = SklearnFactorAnalysis()
+            model = PCA()
         self.model_ = model
         if estimator_params is not None:
             # Update Sklearn estimator params
