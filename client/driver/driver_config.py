@@ -123,7 +123,7 @@ OLTPBENCH_BENCH = 'tpcc'
 #==========================================================
 
 # Path to the controller directory
-CONTROLLER_HOME = os.path.expanduser('~/ottertune/client/controller')
+CONTROLLER_HOME = os.path.expanduser('~/cs6320/ottertune/client/controller')
 
 # Path to the controller configuration file
 CONTROLLER_CONFIG = os.path.join(CONTROLLER_HOME, 'config/postgres_config.json')
@@ -152,4 +152,4 @@ CONTROLLER_LOG = os.path.join(LOG_DIR, 'controller.log')
 WEBSITE_URL = 'http://10.0.0.6:8000'
 
 # Code for uploading new results to the website
-UPLOAD_CODE = 'V8LQT6U304EZ527SFJDQ'
+UPLOAD_CODE = 'X14JDZKKB9LVR2EWLMVK'
