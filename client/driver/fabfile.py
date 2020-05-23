@@ -624,9 +624,9 @@ def run_loops(max_iter=10):
         if dconf.RELOAD_INTERVAL > 0:
             if i % dconf.RELOAD_INTERVAL == 0:
                 if i == 0 and dump is False:
-                    restore_database()
+                    # restore_database()
                 elif i > 0:
-                    restore_database()
+                    # restore_database()
 
         time.sleep(dconf.RESTART_SLEEP_SEC)
         LOG.info('The %s-th Loop Starts / Total Loops %s', i + 1, max_iter)
