@@ -41,6 +41,30 @@
   },
   {
     "model":"website.DBMSCatalog",
+    "pk":156,
+    "fields":{
+        "type":1,
+        "version":"5.6"
+     }
+  },
+  {
+    "model":"website.DBMSCatalog",
+    "pk":157,
+    "fields":{
+        "type":1,
+        "version":"5.7"
+     }
+  },
+  {
+    "model":"website.DBMSCatalog",
+    "pk":180,
+    "fields":{
+        "type":1,
+        "version":"8.0"
+     }
+  },
+  {
+    "model":"website.DBMSCatalog",
     "pk":121,
     "fields":{
         "type":4,
