@@ -12,6 +12,8 @@ Created on Jul 4, 2016
 import numpy as np
 from sklearn.decomposition import FactorAnalysis as SklearnFactorAnalysis
 
+from sklearn.manifold import TSNE
+
 from .base import ModelBase
 
 
@@ -88,24 +90,27 @@ class FactorAnalysis(ModelBase):
             feature_labels = ["feature_{}".format(i) for i in range(X.shape[1])]
         self.feature_labels_ = feature_labels
         if n_components is not None:
-            model = SklearnFactorAnalysis(n_components=n_components)
+            # model = SklearnFactorAnalysis(n_components=n_components)
+            model = TSNE(n_components=n_components)
         else:
-            model = SklearnFactorAnalysis()
+            # model = SklearnFactorAnalysis()
+            model = TSNE()
         self.model_ = model
         if estimator_params is not None:
             # Update Sklearn estimator params
             assert isinstance(estimator_params, dict)
             self.model_.set_params(**estimator_params)
-        self.model_.fit(X)
+        # self.model_.fit(X)
+        self.model_.fit(X.T)
 
-        # Remove zero-valued components (n_components x n_features)
-        components_mask = np.sum(self.model_.components_ != 0.0, axis=1) > 0.0
-        self.components_ = self.model_.components_[components_mask]
+        # # Remove zero-valued components (n_components x n_features)
+        # components_mask = np.sum(self.model_.components_ != 0.0, axis=1) > 0.0
+        # self.components_ = self.model_.components_[components_mask]
 
-        # Compute the % variance explained (with/without noise)
-        c2 = np.sum(self.components_ ** 2, axis=1)
-        self.total_variance_ = np.sum(c2)
-        self.pvars_ = 100 * c2 / self.total_variance_
-        self.pvars_noise_ = 100 * c2 / (self.total_variance_ +
-                                        np.sum(self.model_.noise_variance_))
+        # # Compute the % variance explained (with/without noise)
+        # c2 = np.sum(self.components_ ** 2, axis=1)
+        # self.total_variance_ = np.sum(c2)
+        # self.pvars_ = 100 * c2 / self.total_variance_
+        # self.pvars_noise_ = 100 * c2 / (self.total_variance_ +
+        #                                 np.sum(self.model_.noise_variance_))
         return self

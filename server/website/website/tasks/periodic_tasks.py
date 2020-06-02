@@ -304,7 +304,8 @@ def run_workload_characterization(metric_data, dbms=None):
     fa_model.fit(shuffled_matrix, unique_columnlabels, n_components=5)
 
     # Components: metrics * factors
-    components = fa_model.components_.T.copy()
+    # components = fa_model.components_.T.copy()
+    components = fa_model.embedding_.copy()
     LOG.info("Workload characterization first part costs %.0f seconds.", time.time() - start_ts)
 
     # Run Kmeans for # clusters k in range(1, num_nonduplicate_metrics - 1)
