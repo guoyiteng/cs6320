@@ -117,7 +117,7 @@ class BasicGP(BaseModel):
             ls = kwargs['lengthscales']
         if kwargs.get('variance') is not None:
             var = kwargs['variance']
-        k = gpflow.kernels.Matern12(variance=var, lengthscales=ls, **kernel_kwargs[0])
+        k = gpflow.kernels.RationalQuadratic(variance=var, lengthscales=ls, **kernel_kwargs[0])
         if kwargs.pop('optimize_hyperparameters'):
             k.lengthscales.transform = gpflow.transforms.Logistic(
                 *self._LENGTHSCALE_BOUNDS)
